@@ -1,0 +1,46 @@
+
+# 全部是lan口没有wan口 纯交换机模式
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '1'
+# 	option ports '0 1 2 3 4 6t'
+# 	option vid '1'
+
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '2'
+# 	option ports '6t'
+# 	option vid '2'
+
+
+# wan口翻转 电脑拨号模式
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '1'
+# 	option ports '1 2 3 4 6t'
+# 	option vid '1'
+
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '2'
+# 	option ports '0 6t'
+# 	option vid '2'
+
+
+# 正常路由器模式
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '1'
+# 	option ports '0 1 2 3 6t'
+# 	option vid '1'
+
+# config switch_vlan
+# 	option device 'switch0'
+# 	option vlan '2'
+# 	option ports '4 6t'
+# 	option vid '2'
+
+config arguments
+	option Enabled '1'
+config lan
+	option Enabled '1'
