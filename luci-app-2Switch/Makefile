@@ -27,6 +27,7 @@ define Package/$(PKG_NAME)/prerm
 #!/bin/sh
 chmod 777 /etc/config/lan.sh
 chmod 777 /etc/config/wan.sh
+chmod 777 /etc/config/hx.sh
 chmod 775 /www/cgi-bin/pppoe
 chmod 644 /www/pppoe.html
 

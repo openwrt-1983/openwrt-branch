@@ -2,11 +2,12 @@
 
 
 action = {
-  ["cq"] = function (x) print("\r\n"); os.execute("reboot"); print("重启") end, 
-  ["la"] = function (x) print("\r\n"); os.execute("/etc/config/lan.sh"); print("电脑拨号 设置成功") end, 
-  ["wa"] = function (x) print("\r\n"); os.execute("/etc/config/wan.sh"); print("路由器---设置成功") end, 
+  ["cq"] = function (x) print("\r\n"); os.execute("reboot"); print("重启") end,
+  ["la"] = function (x) print("\r\n"); os.execute("/etc/config/lan.sh"); print("电脑拨号 设置成功") end,
+  ["wa"] = function (x) print("\r\n"); os.execute("/etc/config/wan.sh"); print("路由器---设置成功") end,
 
 
+  ["hx"] = function (x) print("\r\n"); os.execute("/etc/config/hx.sh"); print("唤醒小主机") end,
 
 
 
