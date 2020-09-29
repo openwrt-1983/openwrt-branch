@@ -1,10 +1,9 @@
 
+<input type="button" id="cq" value="重启" onClick="sendSer('cq')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
 
-<input type="button" id="btn" value="重启" onClick="sendSer('cq')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
+<a href=""><input type="button" id="sx" value="刷新"  class="button"style="width:50px;height:40px;background:red;color:white;font-size:20px;"/><a>
 
-<a href=""><input type="button" id="btn" value="刷新"  class="button"style="width:50px;height:40px;background:red;color:white;font-size:20px;"/><a>
-
-<input type="button" id="btn" value="唤醒" onClick="sendSer('hx')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
+<input type="button" id="hx" value="唤醒" onClick="sendSer('hx')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
 
 
 <script language="JavaScript"> function myrefresh() { window.location.reload(); }
@@ -36,24 +35,19 @@ document.getElementById("ser").src="http://192.168.1.2/cgi-bin/pppoe?"+value+Mat
  }
  </script>
 
-
 <table>
 <iframe id='ser' name='ser'src="wanorlan.txt" style='width:180px;height:85;font-size:12px;height="10';></iframe>
 
 <tr><td/>
 </table>
 <br>
-<br />
 <a href="javascript:location.reload()">
-<input type="button" id="btn" value="电脑拨号模式" onClick="sendSer('la')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
+<input type="button" id="dn" value="电脑拨号模式" onClick="sendSer('la')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
 
 <!--下面的两种命令都是换行 这是一段注释。注释不会在浏览器中显示。-->
 <p></p>
 <br />
-<br />
-<br />
-
-<input type="button" id="btn" value="路由器模式" onClick="sendSer('wa')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
+<input type="button" id="ly" value="路由器模式" onClick="sendSer('wa')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
 
 
 </select></td>
