@@ -1,0 +1,58 @@
+
+<input type="button" id="cq" value="重启" onClick="sendSer('cq')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
+
+<a href=""><input type="button" id="sx" value="刷新"  class="button"style="width:50px;height:40px;background:red;color:white;font-size:20px;"/><a>
+
+<input type="button" id="hx" value="唤醒" onClick="sendSer('hx')" style="width:50px;height:40px;background:red;color:white;font-size:20px;"/>
+
+
+<script language="JavaScript"> function myrefresh() { window.location.reload(); }
+setTimeout('myrefresh()',5000); </script>
+
+
+</div>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>路由猫</title>
+<style>
+.top {
+width:300px;
+height:50;
+margin:10 auto;
+
+ }
+</style>
+</head>
+<body bgcolor="#C9EDCD">
+
+<div class='top'>
+<script>
+function sendSer(value){
+document.getElementById("ser").src="http://192.168.1.2/cgi-bin/pppoe?"+value+Math.random();
+ }
+ </script>
+
+<table>
+<iframe id='ser' name='ser'src="wanorlan.txt" style='width:180px;height:85;font-size:12px;height="10';></iframe>
+
+<tr><td/>
+</table>
+<br>
+<a href="javascript:location.reload()">
+<input type="button" id="dn" value="电脑拨号模式" onClick="sendSer('la')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
+
+<!--下面的两种命令都是换行 这是一段注释。注释不会在浏览器中显示。-->
+<p></p>
+<br />
+<input type="button" id="ly" value="路由器模式" onClick="sendSer('wa')" style="width:180px;height:40px;background:#006000;color:white;font-size:24px;"/>
+
+
+</select></td>
+
+<a>
+</div>
+</body>
+</html>
