@@ -2,11 +2,11 @@
 
 
 action = {
-  ["cq"] = function (x) print("\r\n"); os.execute("reboot"); print("ÖØÆô") end,
-  ["la"] = function (x) print("\r\n"); os.execute("/etc/config/lan.sh"); print("µçÄÔ²¦ºÅ ÉèÖÃ³É¹¦") end,
-  ["wa"] = function (x) print("\r\n"); os.execute("/etc/config/wan.sh"); print("Â·ÓÉÆ÷---ÉèÖÃ³É¹¦") end,
+  ["cq"] = function (x) print("\r\n"); os.execute("reboot"); print("é‡å¯") end,
+  ["la"] = function (x) print("\r\n"); os.execute("/etc/config/lan.sh"); print("ç”µè„‘æ‹¨å· è®¾ç½®æˆåŠŸ") end,
+  ["wa"] = function (x) print("\r\n"); os.execute("/etc/config/wan.sh"); print("è·¯ç”±å™¨---è®¾ç½®æˆåŠŸ") end,
 
-  ["hx"] = function (x) print("\r\n"); os.execute("/etc/config/hx.sh"); print("»½ĞÑĞ¡Ö÷»ú") end,
+  ["hx"] = function (x) print("\r\n"); os.execute("/etc/config/hx.sh"); print("å”¤é†’å°ä¸»æœº") end,
 
 
 
